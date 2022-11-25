@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.App>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .login-form {
+        width: 90%;
+    }
+}
