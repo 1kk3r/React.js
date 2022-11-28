@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
-$primary: rgb(52,103,163);
-$secondary: rgb(2,164,219);
+$primary: rgb(163, 52, 52);
+$secondary: rgb(163,52,52);
 $white: #fff;
-$gray: #b7b7b7c4;
+
 
 * {
     font-family: 'Work Sans', sans-serif;
@@ -16,7 +16,7 @@ $gray: #b7b7b7c4;
     flex-direction: column;
     max-height: 100%;
     min-height: 100vh;
-    background-color: $gray;
+    background-image: url(https://images2.alphacoders.com/210/thumb-1920-210152.jpg)  ;
     margin: 0;
 }
 
@@ -65,7 +65,7 @@ input[type="submit"]:hover {
 
 .title {
     margin-bottom: 20px;
-    color: #00a3da;
+    color: rgb(163,52,52);
     font-size: 1.5rem;
     font-weight: bolder;
 }
@@ -88,7 +88,7 @@ input[type="submit"]:hover {
     font-family: inherit;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid $gray;
+    border-bottom: 2px solid ;
     outline: 0;
     font-size: 1.3rem;
     color: $primary;
@@ -113,7 +113,7 @@ input[type="submit"]:hover {
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: $gray;
+    color: rgba(163, 52, 52,30);
 }
 
 .form__field:focus {

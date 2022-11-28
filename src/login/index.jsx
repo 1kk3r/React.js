@@ -1,4 +1,4 @@
-import { Productos } from "../dashboard/Productos/index";
+import Productos from "../dashboard/Productos/index";
 import React, { useState } from "react";
 import "./styles.scss";
 

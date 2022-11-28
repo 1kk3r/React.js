@@ -10,7 +10,7 @@ import './styles.scss'
 import Logo from './jila.png';
 
 import Overview from './Overview';
-import Productos from './Productos';
+import ProductList from './Productos';
 import Users from './Users';
 import Logs from './Logs';
 
@@ -50,7 +50,7 @@ const App = () => {
                 return <Users />;
 
             case '2':
-                return <Productos />;
+                return <ProductList />;
 
             case '3':
                 return <Overview />;    
