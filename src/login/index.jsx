@@ -55,12 +55,12 @@ const Login = () => {
             <div className="form">
                 <form onSubmit={handleSubmit}>
                     <div className="input-container form__group">
-                        <label htmlFor="uname" className="form__label">UserName or Email </label>
+                        <label htmlFor="uname" className="form__label">Username or Email </label>
                         <input type="text" name="uname" required className="form__field" />
                         {renderErrorMessage("uname")}
                     </div>
                     <div className="input-container form__group">
-                        <label htmlFor="pass" className="form__label">PassWord </label>
+                        <label htmlFor="pass" className="form__label">Password </label>
                         <input type="password" name="pass" id="pass" required className="form__field" />
                         {renderErrorMessage("pass")}
                     </div>
