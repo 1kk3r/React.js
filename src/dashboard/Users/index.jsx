@@ -1,39 +1,10 @@
 import { Card, Input, Button, Avatar, Modal, Form, message, Select } from 'antd';
 import { CloseCircleOutlined, EditOutlined, UserAddOutlined, UserSwitchOutlined, UserOutlined, IdcardOutlined, MailOutlined, ApartmentOutlined } from '@ant-design/icons';
 import React, { useState, useEffect } from 'react';
+    
 const { Option } = Select;
-const usuarios = [
-    {
-        id: 1,
-        rut: '12345678-9',
-        username: 'javiermiles',
-        email: 'javier.miles@unixsys.cl',
-        password: '123456',
-        rol: 'Administrador',
-        estado: 'Activo',
-        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
-    },
-    {
-        id: 2,
-        rut: '12343278-k',
-        username: 'marcosalas',
-        email: 'marco.salas@unixsys.cl',
-        password: '123456',
-        rol: 'Administrador',
-        estado: 'Activo',
-        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
-    },
-    {
-        id: 3,
-        rut: '22345678-4',
-        username: 'yerkoolave',
-        email: 'yerko.olave@unixsys.cl',
-        password: '123456',
-        rol: 'Administrador',
-        estado: 'Activo',
-        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
-    },
-]
+
+const usuarios = ['https://g97654d6dbdbba9-vucawnnhek5q4k8y.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/usuarios/']
 
 const Users = () => {
 
