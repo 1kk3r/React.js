@@ -1,10 +1,10 @@
 import { Card } from 'antd';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
+import './index.css'
 
-
-const url =[]
+const url =["https://g97654d6dbdbba9-vucawnnhek5q4k8y.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/producto/"]
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     id: '',
     nombre: '',
     precio: '',  
-    descripcion: '',
+    img: '',
   });
 
   const handleChange=e=>{
@@ -44,7 +44,7 @@ function App() {
         if(productoSeleccionado.id===producto.id){
           producto.nombre=productoSeleccionado.nombre;
           producto.precio=productoSeleccionado.precio;
-          producto.descripcion=productoSeleccionado.descripcion;
+          producto.img=productoSeleccionado.img;
         }
       })
       setData(dataNueva);
@@ -117,14 +117,15 @@ return(
         <br />
         <br />
 
-        <Input size='large' placeholder="Descripcion" type="text" className="form-control" name="descripcion" onChange={handleChange}/>
+        <Input size='large' placeholder="Img" type="text" className="form-control" name="img" onChange={handleChange}/>
 
         <br />
         <br />
 
-        <button type='primary' style={{width: '100%', height: 30}} key="insertar" onClick={()=>abrirCerrarModalEditar('Aplicar')}  block/>
+        <Button className='boton' type='primary' key="insertar" onClick={()=>peticionPut()}>Insertar</Button>
       </Card>
 
+      
     </div>
   </Card>
 
