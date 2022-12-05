@@ -122,7 +122,7 @@ return(
         <br />
         <br />
 
-        <Button className='boton' type='primary' key="insertar" onClick={()=>peticionPut()}>Insertar</Button>
+        <Button className='boton' type='primary' key="insertar" onClick={()=>peticionPost()}>Insertar</Button>
       </Card>
 
       

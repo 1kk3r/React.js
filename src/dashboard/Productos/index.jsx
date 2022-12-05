@@ -41,11 +41,11 @@ const Productos = () => {
           return (
           <Col key={uuid()} className="gutter-box" >
 
-            <Card
+            <Card 
               key={item.key} valor={item} onClick={handleEdit}
               hoverable
               style={{
-                width: 240,
+                width: 250,
               }}
               cover={<img alt="example" src={item.img} />}
             >
