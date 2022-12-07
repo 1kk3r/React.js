@@ -16,7 +16,7 @@ function App() {
 
   const [productoSeleccionado,setProductoSeleccionado]=useState({
     id: '',
-    nombre: '',
+    titulo: '',
     precio: '',  
     img: '',
   });
@@ -107,7 +107,7 @@ return(
         <br />
         <br />
 
-        <Input size='large' placeholder="Nombre" type="text" className="form-control" name="nombre" onChange={handleChange} />
+        <Input size='large' placeholder="Titulo" type="text" className="form-control" name="titulo" onChange={handleChange} />
 
         <br />
         <br />

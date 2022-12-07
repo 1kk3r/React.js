@@ -9,10 +9,10 @@ import React, { useState } from 'react';
 import './styles.scss'
 import Logo from './jila.png';
 
-import Overview from './Overview';
+import Statistics from './Statistics';
 import ProductList from './Productos';
 import Users from './Users';
-import Logs from './Logs';
+import Create from './Create';
 
 
 const { Content, Sider, Header } = Layout;
@@ -53,10 +53,10 @@ const App = () => {
                 return <ProductList />;
 
             case '3':
-                return <Overview />;    
+                return <Statistics />;    
 
             case '4':
-                return <Logs />;
+                return <Create />;
             default:
                 return <Result
                     status="404"

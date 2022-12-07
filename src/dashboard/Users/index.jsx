@@ -114,8 +114,8 @@ const Users = () => {
                             allowClear
                         >
                             <Option value="Usuario">Usuario</Option>
-                            <Option value="Operador">Operador</Option>
                             <Option value="Administrador">Administrador</Option>
+
                         </Select>
                     </Form.Item>
 
@@ -250,8 +250,8 @@ const Users = () => {
                             allowClear
                         >
                             <Option value="Usuario">Usuario</Option>
-                            <Option value="Operador">Operador</Option>
                             <Option value="Administrador">Administrador</Option>
+
                         </Select>
                     </Form.Item>
 
